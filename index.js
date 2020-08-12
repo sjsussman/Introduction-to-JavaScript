@@ -233,9 +233,20 @@ console.log(gradeCalc(100));
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
+const vowelCount = (str) => {
+    let count = 0;
+    str = str.toUpperCase();
+    let vowelArray = ['A', 'E', 'I', 'O', 'U'];
 
+    for (let letter of str){
+        if (vowelArray.includes(letter)) {
+            count++;
+        }
+    }
+        return count;
+}
 
-
+console.log(vowelCount('Hello, How are you TODAy?'))
 
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
